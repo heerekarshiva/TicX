@@ -9,7 +9,10 @@ import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
 import { Input } from '@/components/ui/Input';
 import { createClient } from '@/lib/supabase/client';
+<<<<<<< HEAD
 import { LocationPicker, type PickedLocation } from '@/components/LocationPicker';
+=======
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
 
 interface Profile {
   full_name: string | null;
@@ -29,8 +32,11 @@ export default function ProfilePage() {
   const [savingUpi, setSavingUpi] = useState(false);
   const [upiSaved, setUpiSaved] = useState(false);
   const [upiError, setUpiError] = useState<string | null>(null);
+<<<<<<< HEAD
   const [loc, setLoc] = useState<Partial<PickedLocation> | undefined>();
   const [locSaved, setLocSaved] = useState(false);
+=======
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
 
   async function loadProfile() {
     const supabase = createClient();
@@ -44,9 +50,12 @@ export default function ProfilePage() {
   }
 
   useEffect(() => { loadProfile(); }, []);
+<<<<<<< HEAD
   useEffect(() => {
     fetch('/api/profile/location').then(r => (r.ok ? r.json() : null)).then(d => { if (d?.city) setLoc({ country: d.country ?? 'India', state: d.state ?? '', city: d.city }); }).catch(() => {});
   }, []);
+=======
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
 
   // Saves the SELLER'S OWN UPI ID so buyers can pay them directly — nothing
   // here is a shared or hardcoded UPI ID, it's per-account and only used on
@@ -104,6 +113,7 @@ export default function ProfilePage() {
         </Card>
 
         <Card className="mt-4">
+<<<<<<< HEAD
           <h2 className="text-sm font-semibold text-navy-900">Location</h2>
           <p className="mt-1 text-xs text-slate-500">
             Your city personalises tickets, events and hackathons on your home page{loc?.city ? <> — currently <span className="font-medium text-navy-900">{loc.city}</span></> : null}.
@@ -115,6 +125,8 @@ export default function ProfilePage() {
         </Card>
 
         <Card className="mt-4">
+=======
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
           <h2 className="text-sm font-semibold text-navy-900">Payout / UPI ID</h2>
           <p className="mt-1 text-xs text-slate-500">
             Used to pay out your earnings after one of your listings sells. This is your own

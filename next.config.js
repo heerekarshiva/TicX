@@ -10,7 +10,11 @@ const csp = [
   "object-src 'none'",
   "frame-ancestors 'none'",
   "form-action 'self'",
+<<<<<<< HEAD
   "img-src 'self' data: blob: https://*.supabase.co https://image.tmdb.org https://m.media-amazon.com https://*.razorpay.com",
+=======
+  "img-src 'self' data: blob: https://*.supabase.co https://image.tmdb.org https://*.razorpay.com",
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
   "font-src 'self' data:",
   "style-src 'self' 'unsafe-inline'",
   `script-src 'self' 'unsafe-inline' https://checkout.razorpay.com${isProd ? '' : " 'unsafe-eval'"}`,
@@ -28,7 +32,11 @@ const securityHeaders = [
   { key: 'X-Frame-Options', value: 'DENY' },
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
   // camera=(self) is required by the organizer QR scanner.
+<<<<<<< HEAD
   { key: 'Permissions-Policy', value: 'camera=(self), microphone=(), geolocation=(self), payment=(self "https://checkout.razorpay.com" "https://api.razorpay.com"), interest-cohort=()' },
+=======
+  { key: 'Permissions-Policy', value: 'camera=(self), microphone=(), geolocation=(), payment=(self "https://checkout.razorpay.com" "https://api.razorpay.com"), interest-cohort=()' },
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
   // same-origin-allow-popups: Razorpay opens bank/UPI pages in popups on some devices and needs to talk back.
   { key: 'Cross-Origin-Opener-Policy', value: 'same-origin-allow-popups' }
 ];

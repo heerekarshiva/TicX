@@ -196,3 +196,8 @@ demonstrate row-locking under genuine concurrency).
 - [ ] Rate limiting backed by a shared store (not in-memory) if scaling beyond one instance
 - [ ] Load-test the purchase endpoint under real concurrency
 - [ ] Legal review of the consent/terms text in `ConsentModal.tsx`
+<<<<<<< HEAD
+=======
+#   T i c X  
+ 
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de

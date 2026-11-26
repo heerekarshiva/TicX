@@ -7,3 +7,8 @@ out
 *.tsbuildinfo
 .DS_Store
 coverage
+<<<<<<< HEAD
+=======
+
+reference_*.html
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de

@@ -3,6 +3,11 @@ import { getSettings, json } from '@/lib/events/server';
 
 // Public configuration that drives the organizer form: everything the admin
 // panel controls (types, templates + their fields, field library, rules).
+<<<<<<< HEAD
+=======
+export const dynamic = 'force-dynamic';
+
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
 export async function GET() {
   const admin = createAdminClient();
   const [types, defs, tpls, tplFields, settings] = await Promise.all([

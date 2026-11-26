@@ -1,5 +1,9 @@
 import { ImageResponse } from 'next/og';
 
+<<<<<<< HEAD
+=======
+export const runtime = 'edge';
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
 export const alt = 'MyTICX – Buy, sell and experience: verified movie tickets and events';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';

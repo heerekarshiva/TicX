@@ -6,7 +6,11 @@ import { cn } from '@/lib/utils';
 
 const tabs = [
   ['/admin', 'Overview'], ['/admin/events', 'Events'], ['/admin/event-types', 'Event types'], ['/admin/fields', 'Field builder'],
+<<<<<<< HEAD
   ['/admin/templates', 'Templates'], ['/admin/organizers', 'Organizers'], ['/admin/payouts', 'Payouts'], ['/admin/campus', 'Campus'], ['/admin/settings', 'Settings']
+=======
+  ['/admin/templates', 'Templates'], ['/admin/organizers', 'Organizers'], ['/admin/payouts', 'Payouts'], ['/admin/settings', 'Settings']
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
 ];
 export function AdminShell({ title, children, action }: { title: string; children: React.ReactNode; action?: React.ReactNode }) {
   const path = usePathname();

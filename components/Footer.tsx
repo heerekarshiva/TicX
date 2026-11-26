@@ -11,7 +11,11 @@ export function Footer() {
             Tickets In Connected eXchange. Buy. Sell. Experience.
           </p>
         </div>
+<<<<<<< HEAD
         <FooterCol title="Marketplace" links={[['Browse tickets', '/marketplace'], ['Sell a ticket', '/sell'], ['Events', '/events'], ['Movie picks', '/suggestions'], ['Campus Marketplace', '/campus']]} />
+=======
+        <FooterCol title="Marketplace" links={[['Browse tickets', '/marketplace'], ['Sell a ticket', '/sell'], ['Events', '/events'], ['Movie picks', '/suggestions']]} />
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
         <FooterCol title="Learn" links={[['How it works', '/how-it-works'], ['FAQ', '/faq'], ['Organize an event', '/organize-event']]} />
         <FooterCol title="Company" links={[['About', '/about'], ['Contact', '/contact'], ['Terms of Service', '/terms'], ['Privacy Policy', '/privacy']]} />
       </div>

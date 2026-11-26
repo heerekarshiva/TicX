@@ -10,13 +10,19 @@ type NavLink = { href: string; label: string; newTab?: boolean };
 // Opens in a NEW TAB per spec. The label/visibility are admin-controlled (platform settings).
 const ORGANIZE: NavLink = { href: '/organize-event', label: 'Organize Your Event', newTab: true };
 const MOVIE_PICKS: NavLink = { href: '/suggestions', label: 'Movie picks' };
+<<<<<<< HEAD
 const CAMPUS: NavLink = { href: '/campus', label: 'Campus Marketplace' };
+=======
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
 const publicLinks: NavLink[] = [
   { href: '/', label: 'Home' },
   { href: '/marketplace', label: 'Browse' },
   { href: '/sell', label: 'Sell Tickets' },
   { href: '/events', label: 'Events' },
+<<<<<<< HEAD
   CAMPUS,
+=======
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
   ORGANIZE,
   MOVIE_PICKS
 ];
@@ -24,7 +30,10 @@ const authedLinks: NavLink[] = [
   { href: '/home', label: 'Home' },
   { href: '/marketplace', label: 'Browse' },
   { href: '/events', label: 'Events' },
+<<<<<<< HEAD
   CAMPUS,
+=======
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
   ORGANIZE,
   MOVIE_PICKS,
   { href: '/my-registrations', label: 'My registrations' },
@@ -84,7 +93,11 @@ export function Navbar({ authed: authedProp }: { authed?: boolean }) {
           </form>
         ) : (
           <nav className="mx-auto hidden items-center gap-7 md:flex">
+<<<<<<< HEAD
             {links.map(l => renderLink(l, `text-sm font-medium text-white/90 hover:text-brand-blue${l === CAMPUS ? ' hidden lg:inline' : ''}`))}
+=======
+            {links.map(l => renderLink(l, 'text-sm font-medium text-white/90 hover:text-brand-blue'))}
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
           </nav>
         )}
 
@@ -93,7 +106,10 @@ export function Navbar({ authed: authedProp }: { authed?: boolean }) {
             <>
               {nav.enabled && <a href="/organize-event" target="_blank" rel="noopener noreferrer" className="hidden px-2 text-sm font-medium text-white/90 hover:text-brand-blue lg:inline">{nav.label}</a>}
               <Link href="/suggestions" className="hidden px-2 text-sm font-medium text-white/90 hover:text-brand-blue lg:inline">Movie picks</Link>
+<<<<<<< HEAD
               <Link href="/campus" className="hidden px-2 text-sm font-medium text-white/90 hover:text-brand-blue lg:inline">Campus Marketplace</Link>
+=======
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
               <Link href="/sell" className="rounded-lg bg-brand-blue px-4 py-2 text-sm font-semibold text-white hover:bg-brand-bluedark">Sell Tickets</Link>
               <Link href="/notifications" aria-label="Notifications" className="relative rounded-full p-2 hover:bg-white/10">
                 <Bell className="h-5 w-5" /><span className="absolute right-1.5 top-1.5 h-2 w-2 rounded-full bg-brand-blue" />

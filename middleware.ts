@@ -4,7 +4,11 @@ import { NextResponse, type NextRequest } from 'next/server';
 // Protects authenticated-only routes at the edge. Even with this in place,
 // every server route/component also re-checks the session — middleware is
 // a UX convenience (fast redirect), not the security boundary.
+<<<<<<< HEAD
 const PROTECTED_PREFIXES = ['/home', '/sell', '/my-tickets', '/my-listings', '/profile', '/notifications', '/admin', '/organize-event', '/organizer', '/my-registrations', '/onboarding', '/campus/sell', '/campus/dashboard'];
+=======
+const PROTECTED_PREFIXES = ['/home', '/sell', '/my-tickets', '/my-listings', '/profile', '/notifications', '/admin', '/organize-event', '/organizer', '/my-registrations'];
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
 
 export async function middleware(req: NextRequest) {
   let res = NextResponse.next({ request: { headers: req.headers } });
@@ -49,5 +53,9 @@ export async function middleware(req: NextRequest) {
 }
 
 export const config = {
+<<<<<<< HEAD
   matcher: ['/home/:path*', '/sell/:path*', '/my-tickets/:path*', '/my-listings/:path*', '/profile/:path*', '/notifications/:path*', '/admin/:path*', '/organize-event/:path*', '/organizer/:path*', '/my-registrations/:path*', '/onboarding/:path*', '/campus/sell/:path*', '/campus/dashboard/:path*']
+=======
+  matcher: ['/home/:path*', '/sell/:path*', '/my-tickets/:path*', '/my-listings/:path*', '/profile/:path*', '/notifications/:path*', '/admin/:path*', '/organize-event/:path*', '/organizer/:path*', '/my-registrations/:path*']
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
 };

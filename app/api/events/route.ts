@@ -7,6 +7,11 @@ import { isDiscoverable } from '@/lib/events/lifecycle';
 // registrations are listed, and the status is re-derived from the clock here —
 // so an event vanishes at start-30min even if the cron has not run. No
 // participant data, organizer email or payment details are exposed.
+<<<<<<< HEAD
+=======
+export const dynamic = 'force-dynamic';
+
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
 export async function GET() {
   await lazySync();
   const admin = createAdminClient();

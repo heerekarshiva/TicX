@@ -10,7 +10,10 @@ import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { formatTime12h } from '@/lib/utils';
+<<<<<<< HEAD
 import { LocationDiscovery } from '@/components/home/LocationDiscovery';
+=======
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
 
 interface ListingRow {
   listing_id: string; resale_price: number; original_price: number;
@@ -125,8 +128,11 @@ export default function HomePage() {
         </div>
       </section>
 
+<<<<<<< HEAD
       <LocationDiscovery />
 
+=======
+>>>>>>> 952ded43d45a4b3be5481656a06799a8854925de
       <section className="container-page py-10">
         <div className="flex items-center justify-between">
           <h2 className="text-lg font-semibold text-navy-900">Recently Listed</h2>
